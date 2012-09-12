@@ -40,6 +40,18 @@
         background.position = ccp(GameCenterX, GameCenterY);
         [self addChild:background];
         
+        CCMenuItemImage *BackToMainMenu = [CCMenuItemImage itemFromNormalImage: @"backBtn.png" 
+                                                                 selectedImage: @"backBtnOn.png"
+                                                                        target: self 
+                                                                      selector: @selector(goToMainMenu:)];
+        
+        BackToMainMenu.position = ccp(GameWidth * 0.075, GameHeight * 0.065);
+        
+        CCMenu *backMenu = [CCMenu menuWithItems: BackToMainMenu, nil];
+        backMenu.position = ccp(0,0);
+        backMenu.scale = 0.8;
+        [self addChild: backMenu];
+        
         //////////////// difficulty
         
         CCSprite *selectDifficulty = [CCSprite spriteWithFile:@"selectDif.png"];
@@ -180,6 +192,11 @@
         
     }
 	return self;
+}
+
+- (void) goToMainMenu: (id) sender
+{
+    [[CCDirector sharedDirector] replaceScene: [CCTransitionFade transitionWithDuration: 1.0 scene: [MainMenuLayer scene]]];
 }
 
 -(void)showMainMenu:(id)sender
