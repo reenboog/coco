@@ -93,6 +93,8 @@
 {
     if(type == 0)
     {
+        CCLOG(@"RandFish: %i Type: %i", randFish, type);
+        
         [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile: [NSString stringWithFormat: @"%i%ifChase.plist", type, randFish]];
         
         [Common loadAnimationWithPlist: @"walkAnimation" andName: [NSString stringWithFormat: @"%i%ifChase", type, randFish]];
@@ -103,6 +105,8 @@
     }
     else
     {
+        CCLOG(@"RandFish: %i Type: %i", randFish, type);
+        
         [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile: [NSString stringWithFormat: @"%ifChase.plist", type]];
         
         [Common loadAnimationWithPlist: @"walkAnimation" andName: [NSString stringWithFormat: @"%ifChase", type]];

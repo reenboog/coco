@@ -26,7 +26,7 @@
     {
         height = arc4random() % 190 + 30;
         
-        sprite = [CCSprite spriteWithFile: @"5.png"];
+        sprite = [CCSprite spriteWithFile: @"5fish.png"];
         self.position = ccp(0, height);
         [self addChild: sprite];
     }

@@ -33,10 +33,10 @@
         timeLabel = [CCLabelBMFont labelWithString: @"Time: 01:30" fntFile: @"font20.fnt"];
         timeLabel.anchorPoint = ccp(0, 0.5);
         timeLabel.position = ccp(120, GameHeight - 20);
-        if(CurrentDifficulty == 1 || CurrentDifficulty == 2)
-        {
+        //if(CurrentDifficulty == 1 || CurrentDifficulty == 2)
+        //{
             [self addChild: timeLabel];
-        }
+        //}
         
         CCMenuItemImage *pauseBtn = [CCMenuItemImage itemFromNormalImage: @"pauseBtn.png" selectedImage: @"pauseBtn.png"
                                                              target: self 

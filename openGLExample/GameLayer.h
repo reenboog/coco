@@ -78,6 +78,8 @@
     NSMutableArray *fishesArray;
     NSMutableArray *curFishesArray;
     NSMutableArray *sharksArray;
+    NSMutableArray *AninatedFishesArray;
+    NSMutableArray *AnimatedFishesForRemoveArray;
 }
 
 // returns a CCScene that contains the HelloWorldLayer as the only child
@@ -91,7 +93,7 @@
 - (void) startGame;
 - (void) doPauseGame;
 - (void) unPauseGame;
-- (void) fishAnimation;
+- (void) fishAnimation: (CCSprite *) fishSprite;
 
 @property (nonatomic, assign) CGPoint pos; 
 @property (nonatomic, assign) GUILayer *guiLayer;

@@ -49,13 +49,13 @@
 		<key>format</key>
 		<integer>2</integer>
 		<key>realTextureFileName</key>
-		<string>0fChase.png</string>
+		<string>00fChase.png</string>
 		<key>size</key>
 		<string>{128,128}</string>
 		<key>smartupdate</key>
 		<string>$TexturePacker:SmartUpdate:5fc99666f24f0dc1f71a1da025aeeeaf$</string>
 		<key>textureFileName</key>
-		<string>0fChase.png</string>
+		<string>00fChase.png</string>
 	</dict>
 </dict>
 </plist>
